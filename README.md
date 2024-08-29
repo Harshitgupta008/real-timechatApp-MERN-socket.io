@@ -1,6 +1,7 @@
 # real-timechatApp-MERN with socket.io
 
 created a real time chatApp using socket.io
+It's a simple chat app where users can communicate using their IDs. Some work is still pending, and I'm continuing to develop it to learn more! 😊
 
 
 # React + Vite
