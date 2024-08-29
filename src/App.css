@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  
+  border-bottom: 1px solid #b9b5b5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.messages::-webkit-scrollbar {
+  width: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #701ef5;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.left-chat,
+.right-chat {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.left-chat {
+  justify-content: flex-start;
+}
+
+.right-chat {
+  justify-content: flex-end;
+}
+
+.left-chat h5 {
+  background-color: #ff2b2bfd;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.right-chat h5 {
+  background-color: #2f7723;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.middle-chat {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+  .chat-box {
+    width: 90%;
+  }
+
+  .messages {
+    height: 250px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
